@@ -4,32 +4,32 @@ public class Qes1_13 {
 
 	public static void main(String[] args) {
 		
-		byte byteVar = 0;
-		// バイト型
+		byte byteVar = 10;
+		// バイト型 10
 		
-        short shortVar = 0;
-        // 短整数型
+        short shortVar = 100;
+        // 短整数型 100
         
-        int intVar = 0;
-        // 整数型
+        int intVar = 1000;
+        // 整数型 1000
         
-        long longVar = 0L;
-        // 長整数型（末尾にLを付ける）
+        long longVar = 10000L;
+        // 長整数型 10000（Lを忘れずに）
         
-        float floatVar = 0.0f;
-        // 単精度浮動小数点数型（末尾にfを付ける）
+        float floatVar = 9.5f;
+        // 単精度浮動小数点数型 9.5
         
-        double doubleVar = 0.0;
-        // 倍精度浮動小数点数型
+        double doubleVar = 10.5;
+        // 倍精度浮動小数点数型 10.5
         
-        char charVar = '\u0000';
-        // 文字型（charの初期値はヌル文字）
+        char charVar = 'a';
+        // 文字型 'a'
         
-        String stringVar = "";
-        // 文字列型（空文字で初期化）
+        String stringVar = "ハロー";
+        // 文字列型 "ハロー"
         
-        boolean booleanVar = false;
-        // ブーリアン型（trueまたはfalse）
+        boolean booleanVar = true;
+        // ブーリアン型 true
 
 	}
 
