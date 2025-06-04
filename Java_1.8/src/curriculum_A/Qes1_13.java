@@ -11,11 +11,6 @@ public class Qes1_13 {
         double weight = 64.2;  // kg
         String favoriteFood = "オムライス";
 
-        // 年齢・身長・体重を和算で自己代入（自分自身に加算）
-        age += age;             // 24 + 24 = 48
-        height += height;       // 168.5 + 168.5 = 337.0
-        weight += weight;       // 64.2 + 64.2 = 128.4
-
         // 自己紹介の出力
         System.out.println("初めまして" + name + "です");
         System.out.println("年齢は" + age + "歳です");
@@ -23,11 +18,14 @@ public class Qes1_13 {
         System.out.println("体重は" + weight + "kgです");
         System.out.println("好きな食べ物は" + favoriteFood + "です");
 
-        // BMIの計算と出力（小数第2位まで表示）
+        // BMI計算
         double heightInMeters = height / 100;
         double bmi = weight / (heightInMeters * heightInMeters);
         
-        System.out.printf("BMIは%.2fです\n", bmi);  // → 11.31 になる
+        System.out.printf("BMIは%.2fです\n", bmi);
+
+        // 年齢が25歳以上かどうか出力
+        System.out.println(age >= 25);
 
 	}
 
