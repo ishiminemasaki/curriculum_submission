@@ -19,6 +19,9 @@ public class Qes1_13 {
         System.out.println(age);
         System.out.println(height);
         
+        // 条件判定
+        System.out.println(age >= 25 || height >= 160);
+        
 	}
 
 }
