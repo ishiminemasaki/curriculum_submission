@@ -17,6 +17,13 @@ public class Qes1_13 {
         System.out.println("身長は" + height + "cmです");
         System.out.println("体重は" + weight + "kgです");
         System.out.println("好きな食べ物は" + favoriteFood + "です");
+        
+        // BMI 計算： 身長(cm)をmに変換してから計算
+        double heightInMeters = height / 100;
+        double bmi = weight / (heightInMeters * heightInMeters);
+
+        // BMI 出力（小数第2位まで表示したい場合）
+        System.out.printf("BMIは%.2fです\n", bmi);
 
 	}
 
