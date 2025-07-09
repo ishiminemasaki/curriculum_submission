@@ -3,12 +3,12 @@ package curriculum_B;
 public class Qes4 {
 
     public static void main(String[] args) {
-        // 外側のループ（1〜9）：掛けられる数（行）
+        // 外側のループ（1〜9）：掛ける数（左側、縦方向）
         for (int i = 1; i <= 9; i++) {
-            // 内側のループ（1〜9）：掛ける数（列）
+            // 内側のループ（1〜9）：掛けられる数（右側、横方向に固定）
             for (int j = 1; j <= 9; j++) {
-                // 掛け算の式と結果を2桁で整形して出力（例：01 * 02 = 02）
-                System.out.printf("%02d * %02d = %02d", j, i, j * i);
+                // 掛け算の式と結果を2桁・整形して出力（例：01 * 02 = 02）
+                System.out.printf("%02d * %02d = %02d", i, j, i * j);
 
                 // 最後の列以外には区切り文字「 || 」を表示
                 if (j != 9) {

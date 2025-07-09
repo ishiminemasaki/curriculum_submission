@@ -1,12 +1,16 @@
 package curriculum_B;
 
-import java.util.Random; // ランダムな値を生成するためにRandomクラスをインポート
+import java.util.Random;  // ランダムな値を生成するためにRandomクラスをインポート
+import java.util.Scanner; // コンソールからの入力を受け取るためにScannerクラスをインポート
 
 public class Qes6 {
 
     public static void main(String[] args) {
-        // 「、」区切りで複数の商品を指定（例：ユーザーが入力した商品）
-        String input = "パソコン、冷蔵庫、扇風機、洗濯機、加湿器、テレビ、ディスプレイ、その他商品";
+        // Scannerオブジェクトを作成（ユーザー入力を受け取る準備）
+        Scanner scanner = new Scanner(System.in);
+
+        // ユーザーに「、」区切りで商品名を入力してもらう
+        String input = scanner.nextLine();
 
         // 入力された文字列を「、」で分割して配列に格納
         String[] items = input.split("、");
@@ -39,18 +43,21 @@ public class Qes6 {
 
                     // 商品名が「テレビ」または「ディスプレイ」の場合の出力
                     case "テレビ", "ディスプレイ" -> {
-                        // ランダムに生成した値を11から引いた数を在庫数とする
+                        // 11からランダム値を引いた数を在庫数とする
                         int adjusted = 11 - stock;
                         // 「テレビ」や「ディスプレイ」の残り台数を出力
                         yield item + "の残り台数は" + adjusted + "台です";
                     }
 
                     // 上記以外の値が入力された場合の出力
-                    default -> "『 " + item + " 』は指定の商品ではありません";
+                    default -> "『" + item + "』は指定の商品ではありません";
                 };
 
             // メッセージを出力
             System.out.println(message);
         }
+
+        // Scannerを閉じる（リソースの解放）
+        scanner.close();
     }
 }
