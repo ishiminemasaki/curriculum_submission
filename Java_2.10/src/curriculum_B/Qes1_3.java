@@ -19,7 +19,11 @@ public class Qes1_3 {
         else if (username.length() > 10) {
             System.out.println("名前を10文字以内にしてください");
         }
-        // 正常な入力（1〜10文字）の場合
+        // 入力文字列に半角英数字以外の文字が含まれている場合
+        else if (!username.matches("[a-zA-Z0-9]+")) {
+            System.out.println("半角英数字のみで名前を入力してください");
+        }
+        // 正常な入力（1〜10文字の半角英数字）の場合
         else {
             System.out.println("ユーザー名「" + username + "」を登録しました");
         }
