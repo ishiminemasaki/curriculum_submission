@@ -20,13 +20,15 @@ public class Curriculum_New_1_18 {
 
 	public static void main(String[] args) {
   // 作成したメソッドをここで呼び出してください
-        multiplyAndPrint(4, 5); // 例：4 × 5 = 20 が出力されます
+        int[] numbers = {1, 2, 3, 4, 5}; // テスト用の配列
+        printArray(numbers); // メソッドを呼び出す
     }
 
-    // 整数を2つ受け取り、乗算して出力するメソッド
-    public static void multiplyAndPrint(int a, int b) {
-        int result = a * b;
-        System.out.println(result);
+    // 整数の配列を受け取り、値を順に出力するメソッド
+    public static void printArray(int[] array) {
+        for (int num : array) {
+            System.out.println(num);
+        }
 	}
 
 }
