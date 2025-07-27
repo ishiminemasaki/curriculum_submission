@@ -22,10 +22,11 @@ public class Curriculum_New_1_18 {
 
 	public static void main(String[] args) {
   // 作成したメソッドをここで呼び出してください
-        // メソッドを呼び出して、戻り値を受け取る
         int[] resultArray = generateRandomNumbers(5);
-    }
 
+        // 平均値を計算して出力する
+        printAverage(resultArray);
+    }
 
     // 指定された回数分、1～100のランダムな整数を生成して出力し、その配列を返す
     public static int[] generateRandomNumbers(int count) {
@@ -43,6 +44,16 @@ public class Curriculum_New_1_18 {
         }
 
         return numbers;
-	}
+    }
 
+    // 配列を受け取り、その平均値を小数点以下も含めて出力する
+    public static void printAverage(int[] array) {
+        int sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+
+        double average = (double) sum / array.length;
+        System.out.println(average);
+    }
 }
