@@ -20,13 +20,13 @@ public class Curriculum_New_1_18 {
 
 	public static void main(String[] args) {
   // 作成したメソッドをここで呼び出してください
-        printMessage("JavaSE", 11);
+        multiplyAndPrint(4, 5); // 例：4 × 5 = 20 が出力されます
     }
 
-    // 文字列型と整数型を引数に取り、"Hello JavaSE 11" を出力するメソッド
-    public static void printMessage(String text, int version) {
-        System.out.println("Hello " + text + " " + version);
-
+    // 整数を2つ受け取り、乗算して出力するメソッド
+    public static void multiplyAndPrint(int a, int b) {
+        int result = a * b;
+        System.out.println(result);
 	}
 
 }
