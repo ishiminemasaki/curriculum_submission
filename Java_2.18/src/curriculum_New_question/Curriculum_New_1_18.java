@@ -20,8 +20,16 @@ public class Curriculum_New_1_18 {
 	
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
 
-	public static void main(String[] args) {
-  // 作成したメソッドをここで呼び出してください
+    public static void main(String[] args) {
+        // 文字列と整数を受け取りメッセージを表示
+        printMessage("JavaSE", 11); // Hello JavaSE 11
+
+        // 整数を受け取り乗算
+        multiplyAndPrint(4, 5); // 20 が出力されます
+
+        // 小数を受け取り加算（オーバーロード）
+        multiplyAndPrint(2.5, 3.5); // 6.0 が出力されます
+
         // ランダムな整数を生成して配列を受け取る
         int[] resultArray = generateRandomNumbers(5);
 
@@ -32,6 +40,23 @@ public class Curriculum_New_1_18 {
         // 平均値が50以上かを判定して出力する
         boolean isAbove50 = isAverageAbove50(average);
         System.out.println(isAbove50);
+    }
+
+    // 文字列型と整数型を引数に取り、"Hello JavaSE 11" を出力するメソッド
+    public static void printMessage(String text, int version) {
+        System.out.println("Hello " + text + " " + version);
+    }
+
+    // 整数を2つ受け取り、乗算して出力するメソッド
+    public static void multiplyAndPrint(int a, int b) {
+        int result = a * b;
+        System.out.println(result);
+    }
+
+    // 小数を2つ受け取り、加算して出力するメソッド（オーバーロード）
+    public static void multiplyAndPrint(double a, double b) {
+        double result = a + b;
+        System.out.println(result);
     }
 
     // 指定された回数分、1～100のランダムな整数を生成して出力し、その配列を返す
