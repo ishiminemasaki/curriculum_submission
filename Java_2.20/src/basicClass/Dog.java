@@ -13,13 +13,22 @@ public class Dog {
     // 動物の名前
     private String name;
 
-    // 名前を受け取ってフィールドに代入
+    // 動物の数を記録
+    private static int animalCount = 0;
+
+    // 名前を受け取ってフィールドに代入、動物数をインクリメント
     public Dog(String name) {
         this.name = name;
+        animalCount++;
     }
 
     // 名前を取得
     public String getName() {
         return name;
+    }
+
+    // 動物の数を取得
+    public static int getAnimalCount() {
+        return animalCount;
     }
 }
