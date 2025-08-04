@@ -12,15 +12,15 @@ public class Animal {
 	// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
 
 
-        // Dogインスタンスを作成
-        Dog myDog = new Dog("ポチ");
+        // コンストラクタを使ってanimalCountを初期化
+        Dog myDog = new Dog("ポチ", 10);
 
         // 動物の名前を出力
         System.out.println(myDog.getName());
-
+        
         // 動物の種類を出力
         System.out.println(myDog.getType());
-
+        
         // 動物の数を出力
         System.out.println(Dog.getAnimalCount());
 

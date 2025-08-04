@@ -17,11 +17,11 @@ public class Dog {
     // 動物の数
     private static int animalCount = 0;
 
-    // 名前を受け取り、「種類」は「犬」に固定
-    public Dog(String name) {
+    // コンストラクタ：名前と動物数を引数で受け取り、animalCountに代入
+    public Dog(String name, int count) {
         this.name = name;
         this.type = "犬";
-        animalCount++;
+        animalCount = count;
     }
 
     // 名前を取得
@@ -34,7 +34,7 @@ public class Dog {
         return type;
     }
 
-    // 動物の数を取得
+    // 動物数を取得
     public static int getAnimalCount() {
         return animalCount;
     }
