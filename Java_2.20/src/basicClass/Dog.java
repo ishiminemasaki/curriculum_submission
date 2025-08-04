@@ -10,21 +10,28 @@ public class Dog {
     // Q4：Q2で作成した変数に引数を代入するコンストラクタを作成してください。
 
 
-    // 動物の名前
+    // 動物の名前と種類
     private String name;
+    private String type;
 
-    // 動物の数を記録
+    // 動物の数
     private static int animalCount = 0;
 
-    // 名前を受け取ってフィールドに代入、動物数をインクリメント
+    // 名前を受け取り、「種類」は「犬」に固定
     public Dog(String name) {
         this.name = name;
+        this.type = "犬";
         animalCount++;
     }
 
     // 名前を取得
     public String getName() {
         return name;
+    }
+
+    // 種類を取得
+    public String getType() {
+        return type;
     }
 
     // 動物の数を取得
