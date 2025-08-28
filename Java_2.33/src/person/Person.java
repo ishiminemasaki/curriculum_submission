@@ -7,17 +7,7 @@ public class Person {
     private int age;              // 年齢
     private double height, weight; // 身長・体重
 
-    // コンストラクタ1（姓 → 名 の順）
-    public Person(String lastName, String firstName, int age, double height, double weight) {
-        this.firstName = firstName;
-        this.lastName = lastName;   // lastNameをセット
-        this.age = age;
-        this.height = height;
-        this.weight = weight;
-        Person.count++; // 人数をカウント
-    }
-
-    // コンストラクタ2（名 → 姓 の順）
+    // コンストラクタ（名 → 姓 の順）
     public Person(String firstName, String lastName, int age, double height, double weight) {
         this.firstName = firstName;
         this.lastName = lastName;   // lastNameをセット
